@@ -1,0 +1,11 @@
+score = ["Sashi","Harini","Medha","Allison","Mahathi"]
+print(score[0])
+print(score[1])
+print(score[2])
+print(score[3])
+print(score[4])
+print(score[-5])
+print(score[-4])
+print(score[-3])
+print(score[-2])
+print(score[-1])
