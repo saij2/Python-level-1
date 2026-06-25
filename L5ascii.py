@@ -1,24 +1,122 @@
-def word_to_binary_table(word):
- ascii_map = {
- ' ': 32, '!': 33, '"': 34, '#': 35, '$': 36, '%': 37, '&': 38, "'": 39,
- '(': 40, ')': 41, '*': 42, '+': 43, ',': 44, '-': 45, '.': 46, '/': 47,
- '0': 48, '1': 49, '2': 50, '3': 51, '4': 52, '5': 53, '6': 54, '7': 55,
- '8': 56, '9': 57, ':': 58, ';': 59, '<': 60, '=': 61, '>': 62, '?': 63,
- '@': 64, 'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69, 'F': 70, 'G': 71,
- 'H': 72, 'I': 73, 'J': 74, 'K': 75, 'L': 76, 'M': 77, 'N': 78, 'O': 79,
- 'P': 80, 'Q': 81, 'R': 82, 'S': 83, 'T': 84, 'U': 85, 'V': 86, 'W': 87,
- 'X': 88, 'Y': 89, 'Z': 90, '[': 91, '\\': 92, ']': 93, '^': 94, '_': 95,
- '`': 96, 'a': 97, 'b': 98, 'c': 99, 'd': 100, 'e': 101, 'f': 102, 'g': 103,
- 'h': 104, 'i': 105, 'j': 106, 'k': 107, 'l': 108, 'm': 109, 'n': 110, 'o': 111,
- 'p': 112, 'q': 113, 'r': 114, 's': 115, 't': 116, 'u': 117, 'v': 118, 'w': 119,
- 'x': 120, 'y': 121, 'z': 122, '{': 123, '|': 124, '}': 125, '~': 126
- }
- print(f"{'Char':<5} {'ASCII':<8} {'Binary'}")
- print("-" * 25)
- for char in word:
- ascii_code = ascii_map.get(char, -1)
- binary_value = bin(ascii_code)[2:] # remove '0b' prefix
- print(f"{char:<5} {ascii_code:<8} {binary_value}")
+words = input("word: ")
+print(f"character | Ascii code | binary")
+print("--------------------------------")
+for character in words:
+    match character:
+        case "A":
+            ascii_code = 65
+        case "B":
+            ascii_code = 66
+        case "C":
+            ascii_code = 67
+        case "D":
+            ascii_code = 68
+        case "E":
+            ascii_code = 69
+        case "F":
+            ascii_code = 70
+        case "G":
+            ascii_code = 71
+        case "H":
+            ascii_code = 72
+        case "I":
+            ascii_code = 73
+        case "J":
+            ascii_code = 74
+        case "K":
+            ascii_code = 75
+        case "L":
+            ascii_code = 76
+        case "M":
+            ascii_code = 77
+        case "N":
+            ascii_code = 78
+        case "O":
+            ascii_code = 79
+        case "P":
+            ascii_code = 80
+        case "Q":
+            ascii_code = 81
+        case "R":
+            ascii_code = 82
+        case "S":
+            ascii_code = 83
+        case "T":
+            ascii_code = 84
+        case "U":
+            ascii_code = 85
+        case "V":
+            ascii_code = 86
+        case "W":
+            ascii_code = 87
+        case "X":
+            ascii_code = 88
+        case "Y":
+            ascii_code = 89
+        case "Z":
+            ascii_code = 90
 
-word = input("Enter a word: ")
-word_to_binary_table(word)
+        case "a":
+            ascii_code = 97
+        case "b":
+            ascii_code = 98
+        case "c":
+            ascii_code = 99
+        case "d":
+            ascii_code = 100
+        case "e":
+            ascii_code = 101
+        case "f":
+            ascii_code = 102
+        case "g":
+            ascii_code = 103
+        case "h":
+            ascii_code = 104
+        case "i":
+            ascii_code = 105
+        case "j":
+            ascii_code = 106
+        case "k":
+            ascii_code = 107
+        case "l":
+            ascii_code = 108
+        case "m":
+            ascii_code = 109
+        case "n":
+            ascii_code = 110
+        case "o":
+            ascii_code = 111
+        case "p":
+            ascii_code = 112
+        case "q":
+            ascii_code = 113
+        case "r":
+            ascii_code = 114
+        case "s":
+            ascii_code = 115
+        case "t":
+            ascii_code = 116
+        case "u":
+            ascii_code = 117
+        case "v":
+            ascii_code = 118
+        case "w":
+            ascii_code = 119
+        case "x":
+            ascii_code = 120
+        case "y":
+            ascii_code = 121
+        case "z":
+            ascii_code = 122
+
+        case " ":
+            ascii_code = 32
+
+    binary_number = bin(ascii_code)
+    print(f"{character} | {ascii_code} | {binary_number[2:]}")
+    
+    
+    
+    
+    
+    
