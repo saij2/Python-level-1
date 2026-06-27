@@ -5,7 +5,7 @@ import random
 player1 = input("Enter Player 1's Name: ")
 player2 = input("Enter Player 2's Name: ")
 
-row1 = [" "," "," "] # 1 D list 
+row1 = [" "," "," "] 
 row2 = [" "," "," "]
 row3 = [" "," "," "]
 
