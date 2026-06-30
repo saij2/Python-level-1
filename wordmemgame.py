@@ -28,6 +28,7 @@ else:
 
 
 selected_words = random.sample(words, n)
+# selected_words = ["cat","dog","tree","rock"]
 
 time.sleep(1)
 os.system("clear")
@@ -49,13 +50,19 @@ guesses = input("Enter the words separated by commas: ").lower().split(",")
 
 
 correct = 0
-
-for i in range(len(guesses), n):
+# 4,4
+# range(start,end)
+# range(1,11) start parameter is optional if you 
+# dont provide it will start the sequence from 0 
+# range(10) 0 to 9 
+for i in range(len(guesses)):
     if guesses[i] == selected_words[i]:
         correct += 1
 
 
 score = (correct / n) * 100
+# print(guesses)
+# print(selected_words)
 '''
 print("\nOriginal sequence:")
 print(", ".join(selected_words))
